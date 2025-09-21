@@ -72,3 +72,9 @@ nav {
         display: flex; /* Icône visible sur mobile */
     }
 }
+
+#imageAccueil {
+        width: 100%;
+        height: auto;
+        display: block;
+}
