@@ -58,7 +58,7 @@ nav ul li a {
 
 /* En-tête contenant l’image */
 header {
-    margin-top: 60px; /* même hauteur que nav pour ne pas couper l'image */
+    margin-top: 5px; /* même hauteur que nav pour ne pas couper l'image */
     position: relative;
 }
 
