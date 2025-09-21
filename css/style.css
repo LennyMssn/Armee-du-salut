@@ -10,36 +10,33 @@ body, html {
     font-family: Arial, sans-serif;
 }
 
-/* NAVBAR FIXE TRANSPARENTE */
+/* NAVBAR FIXE TRANSPARENTE AU-DESSUS DE L'IMAGE */
 nav {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 60px;
-    background-color: rgba(0, 0, 0, 0.5); /* fond noir transparent */
+    background-color: rgba(0, 0, 0, 0.2); /* fond transparent */
     color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 30px;
     z-index: 1000;
-    backdrop-filter: blur(6px); /* optionnel pour effet flou */
+    backdrop-filter: blur(6px);
 }
 
-/* LOGO DANS LA NAV */
+/* LOGO */
 nav .logo {
     height: 40px;
 }
 
-/* MENU HORIZONTAL */
+/* MENU NAV */
 nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
 }
 
 nav ul li a {
@@ -49,7 +46,7 @@ nav ul li a {
     font-size: 16px;
 }
 
-/* IMAGE D'ACCUEIL */
+/* IMAGE D'ACCUEIL – PAS DE MARGIN-TOP ! */
 #imageAccueil {
     width: 100%;
     height: auto;
@@ -58,22 +55,8 @@ nav ul li a {
 
 /* En-tête contenant l’image */
 header {
-    margin-top: 5px; /* même hauteur que nav pour ne pas couper l'image */
     position: relative;
-}
-
-/* Icône burger (mobile) */
-.burger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 5px;
-}
-
-.burger div {
-    width: 25px;
-    height: 3px;
-    background: white;
+    /* PAS de margin-top ici */
 }
 
 /* Responsive */
