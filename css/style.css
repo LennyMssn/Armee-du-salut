@@ -11,7 +11,7 @@ body {
 header {
     position: relative;
     height: 400px;
-    background-image: url('/homepagePic.jpg');
+    background-image: url('homepagePic.jpg');
     background-size: cover;
     background-position: center;
     color: white;
@@ -64,7 +64,7 @@ nav ul li a {
 /* Menu mobile */
 nav {
     display: flex;
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 10px 20px;
     border-radius: 8px;
     z-index: 10;
