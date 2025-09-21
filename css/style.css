@@ -148,7 +148,7 @@ nav ul li a {
 
 /* AJUSTEMENT POUR COMPENSER LA NAV FIXE */
 header {
-    margin-top: 5px; /* même hauteur que la nav */
+    margin-top: 1px; /* même hauteur que la nav */
 }
 
 /* Responsive de base */
