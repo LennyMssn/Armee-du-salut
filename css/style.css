@@ -19,14 +19,11 @@ header {
     background-image: url('homepagePic.jpg');
     background-size: cover;
     background-position: center;
-    color: white;
 
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding: 20px;
-    background-color: #333;
-    color: white;
 
 
 }
@@ -66,7 +63,7 @@ nav ul li a {
     font-weight: bold;
 }
 header {
-    position: relative; 
+    position: relative;
 }
 /* Icône burger (invisible sur PC) */
 .burger {
@@ -102,6 +99,61 @@ header {
     .burger {
         display: flex; /* Icône visible sur mobile */
     }
+}
+
+/* je galère donc code de chat :
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* IMAGE EN HAUT */
+#imageAccueil {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* NAVBAR FIXÉE EN HAUT DE PAGE */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* fond noir transparent */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    z-index: 1000;
+}
+
+/* LOGO */
+nav .logo {
+    height: 40px;
+}
+
+/* LIENS DE LA NAVBAR */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* AJUSTEMENT POUR ÉVITER QUE LA NAV CACHENT LE DÉBUT DE L’IMAGE */
+header {
+    padding-top: 80px; /* égal ou plus que la hauteur de nav */
 }
 
 
