@@ -115,7 +115,7 @@ nav {
     left: 0;
     width: 100%;
     height: 60px;
-    background-color: rgba(0, 0, 0, 0.5); /* fond noir transparent */
+    background-color: rgba(0, 0, 0, 0.1); /* fond noir transparent */
     color: white;
     display: flex;
     align-items: center;
@@ -148,7 +148,7 @@ nav ul li a {
 
 /* AJUSTEMENT POUR COMPENSER LA NAV FIXE */
 header {
-    margin-top: 60px; /* même hauteur que la nav */
+    margin-top: 10px; /* même hauteur que la nav */
 }
 
 /* Responsive de base */
