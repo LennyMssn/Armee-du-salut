@@ -1,94 +1,3 @@
-body , html {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-#imageAccueil {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* Menu mobile */
-nav {
-    display: flex;
-    border-radius: 8px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 15px 20px;
-    z-index: 10;
-}
-
-
-/* Logo */
-#logo {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-/* Navigation */
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-header {
-    position: relative;
-}
-/* Icône burger (invisible sur PC) */
-.burger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 5px;
-}
-
-.burger div {
-    width: 25px;
-    height: 3px;
-    background: white;
-}
-
-
-@media (max-width: 768px) {
-    nav {
-        display: none; /* Caché par défaut */
-        flex-direction: column;
-        background: #333;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 200px;
-        padding: 10px;
-    }
-
-    nav.show {
-        display: flex; /* S'affiche quand la classe "show" est ajoutée */
-    }
-
-    .burger {
-        display: flex; /* Icône visible sur mobile */
-    }
-}
-
-/* je galère donc code de chat :
-
 /* RESET & BASE */
 * {
     margin: 0;
@@ -99,13 +8,6 @@ header {
 body, html {
     width: 100%;
     font-family: Arial, sans-serif;
-}
-
-/* IMAGE EN HAUT (pleine largeur, non coupée) */
-#imageAccueil {
-    width: 100%;
-    height: auto;
-    display: block;
 }
 
 /* NAVBAR FIXE TRANSPARENTE */
@@ -137,6 +39,7 @@ nav ul {
     gap: 20px;
     margin: 0;
     padding: 0;
+    justify-content: center;
 }
 
 nav ul li a {
@@ -146,12 +49,34 @@ nav ul li a {
     font-size: 16px;
 }
 
-/* AJUSTEMENT POUR COMPENSER LA NAV FIXE */
-header {
-    margin-top: 1px; /* même hauteur que la nav */
+/* IMAGE D'ACCUEIL */
+#imageAccueil {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
-/* Responsive de base */
+/* En-tête contenant l’image */
+header {
+    margin-top: 60px; /* même hauteur que nav pour ne pas couper l'image */
+    position: relative;
+}
+
+/* Icône burger (mobile) */
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background: white;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
@@ -162,5 +87,9 @@ header {
     nav ul {
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .burger {
+        display: flex;
     }
 }
