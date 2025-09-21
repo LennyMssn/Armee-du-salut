@@ -103,7 +103,7 @@ header {
 
 /* je galère donc code de chat :
 
-/* RESET */
+/* RESET & BASE */
 * {
     margin: 0;
     padding: 0;
@@ -112,20 +112,17 @@ header {
 
 body, html {
     width: 100%;
-    height: 100%;
     font-family: Arial, sans-serif;
 }
 
-/* IMAGE EN HAUT — DOIT ÊTRE PLEINE LARGEUR */
+/* IMAGE EN HAUT (pleine largeur, non coupée) */
 #imageAccueil {
     width: 100%;
     height: auto;
     display: block;
-    margin: 0;
-    padding: 0;
 }
 
-/* NAVBAR FIXE, EN HAUT, SEMI-TRANSPARENTE */
+/* NAVBAR FIXE TRANSPARENTE */
 nav {
     position: fixed;
     top: 0;
@@ -139,7 +136,7 @@ nav {
     justify-content: space-between;
     padding: 0 30px;
     z-index: 1000;
-    backdrop-filter: blur(6px); /* effet flou facultatif */
+    backdrop-filter: blur(6px); /* optionnel pour effet flou */
 }
 
 /* LOGO DANS LA NAV */
@@ -147,7 +144,7 @@ nav .logo {
     height: 40px;
 }
 
-/* LISTE DES LIENS */
+/* MENU HORIZONTAL */
 nav ul {
     list-style: none;
     display: flex;
@@ -163,10 +160,21 @@ nav ul li a {
     font-size: 16px;
 }
 
-/* Pour compenser la navbar qui cache le haut de la page */
+/* AJUSTEMENT POUR COMPENSER LA NAV FIXE */
 header {
-    margin-top: 60px; /* égal à la hauteur de la nav */
+    margin-top: 60px; /* même hauteur que la nav */
 }
 
+/* Responsive de base */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
 
-
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
