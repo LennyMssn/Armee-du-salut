@@ -17,7 +17,7 @@ nav {
     left: 0;
     width: 100%;
     height: 60px;
-    background-color: rgba(0, 0, 0, 0.1); /* fond noir transparent */
+    background-color: rgba(0, 0, 0, 0.5); /* fond noir transparent */
     color: white;
     display: flex;
     align-items: center;
