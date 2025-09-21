@@ -7,6 +7,11 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
+#imageAccueil {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
 header {
     position: relative;
@@ -25,6 +30,19 @@ header {
 
 
 }
+/* Menu mobile */
+nav {
+    display: flex;
+    border-radius: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px 20px;
+    z-index: 10;
+}
+
 
 /* Logo */
 #logo {
@@ -39,6 +57,7 @@ nav ul {
     padding: 0;
     display: flex;
     gap: 20px;
+    justify-content: center;
 }
 
 nav ul li a {
@@ -46,7 +65,9 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
 }
-
+header {
+    position: relative; 
+}
 /* Icône burger (invisible sur PC) */
 .burger {
     display: none;
@@ -61,14 +82,6 @@ nav ul li a {
     background: white;
 }
 
-/* Menu mobile */
-nav {
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px 20px;
-    border-radius: 8px;
-    z-index: 10;
-}
 
 @media (max-width: 768px) {
     nav {
