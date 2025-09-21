@@ -103,7 +103,7 @@ body, html {
 
 /* IMAGE EN HAUT (pleine largeur, non coupée) */
 #imageAccueil {
-    width: 110%;
+    width: 100%;
     height: auto;
     display: block;
 }
@@ -148,7 +148,7 @@ nav ul li a {
 
 /* AJUSTEMENT POUR COMPENSER LA NAV FIXE */
 header {
-    margin-top: 10px; /* même hauteur que la nav */
+    margin-top: 5px; /* même hauteur que la nav */
 }
 
 /* Responsive de base */
