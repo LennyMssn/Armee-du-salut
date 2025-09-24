@@ -21,7 +21,7 @@ nav {
     color: white;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0 30px;
     z-index: 1000;
     backdrop-filter: blur(6px);
@@ -76,3 +76,5 @@ header {
         display: flex;
     }
 }
+
+
