@@ -1,4 +1,4 @@
-/* RESET & BASE */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@ body, html {
     font-family: Arial, sans-serif;
 }
 
-/* NAVBAR FIXE TRANSPARENTE AU-DESSUS DE L'IMAGE */
+
 nav {
     position: fixed;
     top: 0;
@@ -28,12 +28,11 @@ nav {
     backdrop-filter: blur(6px);
 }
 
-/* LOGO */
+
 nav .logo {
     height: 40px;
 }
 
-/* MENU NAV */
 nav ul {
     list-style: none;
     display: flex;
@@ -47,20 +46,20 @@ nav ul li a {
     font-size: 16px;
 }
 
-/* IMAGE D'ACCUEIL – PAS DE MARGIN-TOP ! */
+
 #imageAccueil {
     width: 100%;
     height: auto;
     display: block;
 }
 
-/* En-tête contenant l’image */
+
 header {
     position: relative;
-    /* PAS de margin-top ici */
+
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
@@ -87,7 +86,7 @@ header {
     left: 50%;
     transform: translate(-50%,-50%);
     color: white;
-    font-size: 2em;
+    font-size: 3em;
     font-weight: bold;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
 }
