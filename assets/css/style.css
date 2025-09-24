@@ -79,6 +79,7 @@ header {
 .conteneur-image{
     position: relative;
     display:inline-block;
+    width: 100%;
 }
 .slogan{
     position: absolute;
