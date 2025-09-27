@@ -8,8 +8,8 @@
 </head>
 <header>
     <nav class="main-nav">
-        <a href="https://lennymssn.github.io/Armee-du-salut/index.html" style="display: inline-block;">
-            <img src="assets/images/Logo_de_l'Armée_du_Salut.png" alt="Logo" style="height: 50px;">
+        <a href="index.html" class="logo-link">
+            <img src="assets/images/Logo_de_l'Armée_du_Salut.png" alt="Logo" class="logo">
         </a>
         <ul>
             <li><a href="index.html">Armée du Salut</a></li>
@@ -19,6 +19,13 @@
             <li><a href="soutenir.html">Nous soutenir</a></li>
             <li><a href="contacter.html">Nous contacter</a></li>
         </ul>
+        <div class="account-menu">
+            <button class="account-btn" onclick="toggleMenu()">Votre compte ▼</button>
+            <div class="dropdown" id="dropdownMenu">
+                <a href="gerer.html">Gérer son compte</a>
+                <a href="logout.html">Déconnexion</a>
+            </div>
+        </div>
     </nav>
 </header>
 <script src="script.js"></script>
