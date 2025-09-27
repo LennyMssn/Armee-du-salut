@@ -35,6 +35,24 @@ main {
 }
 
 
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* liens à gauche, bouton à droite */
+    gap: 20px;
+    padding: 0 30px;
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.account-menu {
+    position: relative;
+}
+
 
 
 .main-nav .logo {
