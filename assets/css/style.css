@@ -17,7 +17,7 @@ main {
 }
 
 
-nav {
+.main-nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -33,6 +33,7 @@ nav {
     z-index: 1000;
     backdrop-filter: blur(6px);
 }
+
 
 
 nav .logo {
