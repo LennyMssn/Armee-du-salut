@@ -1,14 +1,11 @@
-
+/* Reset de base */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body:not(.no-fixed-nav) {
-    padding-top: 60px; /* même hauteur que la nav */
-}
-
+/* Corps */
 body, html {
     width: 100%;
     height: 100%;
@@ -16,162 +13,100 @@ body, html {
     display: flex;
     flex-direction: column;
 }
+
 main {
     flex: 1;
 }
 
-
+/* Navbar */
 .main-nav {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 60px;
-    background-color: rgba(0, 0, 0, 0); /* fond transparent */
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 70px;
-    padding: 0 30px;
+    background-color: rgba(0,0,0,0.2); /* fond transparent */
     z-index: 1000;
-
 }
 
-
-.main-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* liens à gauche, bouton à droite */
-    gap: 20px;
-    padding: 0 30px;
+/* Logo */
+.navbar-brand .logo {
+    height: 60px;
+    padding-left: 30px;
 }
 
-.main-nav ul {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-    padding-top: 16px;
-}
-
-.account-menu {
-    position: relative;
-}
-
-
-
-.main-nav .logo {
-    height: 40px;
-}
-
-
-.main-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-
-.main-nav ul li a {
+/* Menu links */
+.navbar-nav .nav-link {
     color: white;
-    text-decoration: none;
     font-weight: bold;
-    font-size: 16px;
-    transition: border-bottom 0.0s ease;
+    transition: border-bottom 0.2s ease;
 }
 
-.main-nav ul li a:hover {
-    padding-bottom: 2px;
+.navbar-nav .nav-link:hover {
     border-bottom: 2px solid white;
 }
 
+/* Menu compte */
+.btn-outline-light {
+    color: white;
+    border-color: white;
+}
 
+.btn-outline-light:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-color: white;
+}
+
+/* Dropdown menu compte */
+.dropdown-menu {
+    min-width: 180px;
+    border-radius: 6px;
+}
+
+/* Image d’accueil */
 #imageAccueil {
     width: 100%;
     height: auto;
     display: block;
 }
 
-
-header {
+/* Slogan sur l’image */
+.conteneur-image {
     position: relative;
-
-}
-
-.site-footer {
-    position: relative;
-}
-
-@media (max-width: 768px) {
-
-    .main-nav {
-        flex-direction: column;
-        height: auto;
-        padding: 10px;
-    }
-
-
-    .main-nav ul {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .burger {
-        display: flex;
-    }
-}
-.conteneur-image{
-    position: relative;
-    display: block;
     width: 100%;
 }
-.slogan{
+
+.slogan {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     color: white;
     font-size: 3em;
     font-weight: bold;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    text-align: center;
 }
 
-:root{
-    --bg:#0f1724;
-    --fg:#f8fafc;
-    --muted:#9aa4b2;
-    --accent:#d1d5db;
-    --gap:16px;
-    --max-width:1100px;
-    --radius:8px;
-}
-
-.site-footer *{box-sizing:border-box}
-.site-footer a{color:inherit;text-decoration:none}
-
-.site-footer{
-    background:var(--bg);
+/* Footer */
+:root{ --bg:#0f1724; --fg:#f8fafc; --muted:#9aa4b2; --accent:#d1d5db; --gap:16px; --max-width:1100px; --radius:8px; }
+.site-footer *{box-sizing:border-box} .site-footer a{color:inherit;text-decoration:none}
+.site-footer{ background:var(--bg);
     color:var(--fg);
     padding:24px 16px;
     font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
     font-size:14px;
 }
 
-.footer-inner{
-    max-width:var(--max-width);
+.footer-inner{ max-width:var(--max-width);
     margin:0 auto;
     display:flex;
     align-items:center;
     justify-content:space-between;
-    gap:var(--gap);
-    flex-wrap:wrap;
+    gap:var(--gap); flex-wrap:wrap;
 }
 
-.social{
-    display:flex;
-    gap:12px;
-    align-items:center;
-}
+.social{ display:flex; gap:12px; align-items:center; }
 
 .social a{
     display:inline-flex;
@@ -186,11 +121,17 @@ header {
     border:1px solid rgba(255,255,255,0.04);
 }
 
-.social a:focus{outline:2px solid rgba(255,255,255,0.12);outline-offset:3px;border-radius:6px}
-.social a:hover{transform:translateY(-3px);background:rgba(255,255,255,0.03)}
+.social a:focus{
+    outline:2px solid rgba(255,255,255,0.12);
+    outline-offset:3px;border-radius:6px
+}
+
+.social a:hover{
+    transform:translateY(-3px);
+    background:rgba(255,255,255,0.03)
+}
 
 .icon{width:20px;height:20px;fill:var(--fg);display:block}
-
 .contact .phone{
     font-weight:600;
     color:var(--fg);
@@ -200,85 +141,27 @@ header {
     transition:background .12s ease,color .12s ease,transform .12s ease;
 }
 
-.contact .phone:hover{background:rgba(255,255,255,0.03);transform:translateY(-2px)}
-
-.legal{
-    display:flex;
-    gap:12px;
-    align-items:center;
-    flex-wrap:wrap;
+.contact .phone:hover{
+    background:rgba(255,255,255,0.03);
+    transform:translateY(-2px)
 }
 
-.legal-link{
-    color:var(--muted);
-    font-size:13px;
-    padding:6px 8px;
-    border-radius:6px;
-}
-
+.legal{ display:flex; gap:12px; align-items:center; flex-wrap:wrap; }
+.legal-link{ color:var(--muted); font-size:13px; padding:6px 8px; border-radius:6px; }
 .legal-link:hover{color:var(--accent);text-decoration:underline}
-
-.copyright{
-    margin-top:14px;
-    text-align:center;
-    color:var(--muted);
-    font-size:13px;
-    max-width:var(--max-width);
-    margin-left:auto;
-    margin-right:auto;
-}
+.copyright{ margin-top:14px; text-align:center; color:var(--muted); font-size:13px; max-width:var(--max-width); margin-left:auto; margin-right:auto; }
 
 @media(max-width:660px){
     .footer-inner{flex-direction:column;align-items:stretch;gap:12px}
-    .contact{order:2}
-    .legal{order:3;justify-content:flex-start}
+    .contact{order:2} .legal{order:3;justify-content:flex-start}
     .social{order:1;justify-content:flex-start}
     .copyright{margin-top:10px}
 }
-
-.account-menu {
-    position: relative;
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .slogan {
+        font-size: 2em;
+    }
 }
-
-.account-btn {
-    background: transparent;
-    border: 1px solid white;
-    color: white;
-    font-weight: bold;
-    font-size: 14px;
-    padding: 8px 12px;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-.account-btn:hover {
-    background: rgba(255, 255, 255, 0.1);
-}
-
-/* Dropdown */
-.dropdown {
-    display: none;
-    position: absolute;
-    top: 100%;   /* juste en dessous du bouton */
-    right: 0;
-    background-color: white;
-    color: black;
-    border-radius: 6px;
-    box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
-    min-width: 180px;
-    z-index: 999;
-}
-
-.dropdown a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: #333;
-}
-
-.dropdown a:hover {
-    background-color: #f1f1f1;
-}
-
 
 
