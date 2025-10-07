@@ -51,6 +51,7 @@ main {
     display: flex;
     gap: 20px;
     list-style: none;
+    padding-top: 16px;
 }
 
 .account-menu {
