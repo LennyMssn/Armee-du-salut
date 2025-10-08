@@ -38,12 +38,15 @@ main {
 .navbar-nav .nav-link {
     color: white;
     font-weight: bold;
+    border-bottom: 2px solid transparent; /* bordure invisible au départ */
     transition: border-bottom 0.2s ease;
+    padding-bottom: 2px;
 }
 
 .navbar-nav .nav-link:hover {
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid white; /* bordure visible au survol */
 }
+
 
 /* Menu compte */
 .btn-outline-light {
