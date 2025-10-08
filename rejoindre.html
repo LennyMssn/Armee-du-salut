@@ -8,36 +8,53 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <header>
-    <nav class="main-nav">
-        <a href="index.html" class="logo-link">
-            <img src="assets/images/Logo_de_l'Armée_du_Salut.png" alt="Logo" class="logo">
-        </a>
-        <ul>
-            <li><a href="index.html">Armée du Salut</a></li>
-            <li><a href="actions.html">Actions sociales</a></li>
-            <li><a href="actu.html">Actualités</a></li>
-            <li><a href="rejoindre.html">Nous rejoindre</a></li>
-            <li><a href="soutenir.html">Nous soutenir</a></li>
-            <li><a href="contacter.html">Nous contacter</a></li>
-        </ul>
-        <div class="account-menu">
-            <button class="account-btn" onclick="toggleMenu()">Votre compte ▼</button>
-            <div class="dropdown" id="dropdownMenu">
-                <a href="gerer.html">Gérer son compte</a>
-                <a href="logout.html">Déconnexion</a>
+    <nav class="navbar navbar-expand-lg navbar-dark main-nav" style="background-color: rgba(0,0,0,0.2);">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/Logo_de_l'Armée_du_Salut.png" alt="Logo" class="logo">
+            </a>
+
+            <!-- Bouton burger -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+                    aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu principal + menu compte -->
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Armée du Salut</a></li>
+                    <li class="nav-item"><a class="nav-link" href="actions.html">Actions sociales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="actu.html">Actualités</a></li>
+                    <li class="nav-item"><a class="nav-link" href="rejoindre.html">Nous rejoindre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="soutenir.html">Nous soutenir</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacter.html">Nous contacter</a></li>
+                </ul>
+
+                <!-- Menu compte -->
+                <div class="d-flex align-items-center ms-lg-3 mt-2 mt-lg-0">
+                    <div class="dropdown">
+                        <button class="btn btn-outline-light dropdown-toggle" type="button" id="accountMenuButton"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                            Votre compte
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="accountMenuButton">
+                            <li><a class="dropdown-item" href="gerer.html">Gérer son compte</a></li>
+                            <li><a class="dropdown-item" href="logout.html">Déconnexion</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
 </header>
 <script src="script.js"></script>
 
-<h3></h3>
 
-
-
-
-
-
+<main>
+    kazehfaezfgky
+</main>
 
 
 <footer class="site-footer" role="contentinfo">
