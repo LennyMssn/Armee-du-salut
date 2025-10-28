@@ -1,17 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-
-<main>
-    kazehfaezfgky
-</main>
-
 <footer class="site-footer" role="contentinfo">
     <div class="footer-inner">
         <nav class="social" aria-label="Réseaux sociaux">
@@ -44,8 +30,7 @@
         © <span id="year"></span> Copyright Fondation de l'Armée du Salut Tous droits réservés
     </div>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script>
     document.getElementById('year').textContent = new Date().getFullYear();
 </script>
-</body>
-</html>
