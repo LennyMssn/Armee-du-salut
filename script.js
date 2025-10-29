@@ -3,7 +3,6 @@ function toggleMenu() {
     menu.style.display = menu.style.display === "block" ? "none" : "block";
 }
 
-// Fermer si clic ailleurs
 window.onclick = function(event) {
     if (!event.target.matches('.account-btn')) {
         const menu = document.getElementById("dropdownMenu");
@@ -12,5 +11,16 @@ window.onclick = function(event) {
         }
     }
 }
+document.addEventListener("DOMContentLoaded", () => {
+    const requiredFields = document.querySelectorAll("input[required], textarea[required]");
 
+    requiredFields.forEach((el) => {
+        el.addEventListener("invalid", (e) => {
+            e.target.setCustomValidity("Ce champ est obligatoire.");
+        });
 
+        el.addEventListener("input", (e) => {
+            e.target.setCustomValidity("");
+        });
+    });
+});

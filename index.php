@@ -1,18 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <?php include 'block/head.php';?>
-<body>
+    <?php require_once 'block/head.php';?>
 
-    <?php include 'block/nav.php';?>
+    <body>
+    <header><?php require_once 'block/nav.php'; ?></header>
+    <main>
 
-    <header>
-        <div class="conteneur-image">
-            <img src="assets/images/homepagePic.jpg" id="imageAccueil" alt="Image d'accueil">
-            <div class="slogan" >Secourir, réhabiliter, reconstruire des vies</div>
-        </div>
-    </header>
-
-    <?php include 'block/footer.php';?>
-
-</body>
+    </main>
+    <footer><?php require_once 'block/footer.php'; ?></footer>
+    </body>
 </html>
