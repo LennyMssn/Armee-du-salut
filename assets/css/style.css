@@ -182,6 +182,7 @@ main {
 .contact-form {
     max-width: 800px;
     margin: 0 auto;
+    background-color: darkgrey;
 }
 
 .contact-form h2 {
@@ -205,5 +206,8 @@ main {
     border-radius: 6px;
     font-weight: 600;
     letter-spacing: 1px;
+}
+textarea {
+    resize : none;
 }
 

@@ -2,7 +2,6 @@
 <html lang="fr">
         <title>Contact</title>
         <?php require_once "block/head.php"; ?>
-
         <body>
             <header><?php require_once 'block/nav.php'; ?></header>
             <main>
@@ -62,9 +61,6 @@
                         </div>
                     </form>
                 </section>
-
-
-
             </main>
             <footer><?php require_once 'block/footer.php'; ?></footer>
         </body>
