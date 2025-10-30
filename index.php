@@ -127,9 +127,36 @@
         </div>
     </section>
 
+        <div class="container my-4 text-center">
+            <div class="titre-bleu">
+                <h2 class="mb-0">Armée du Salut</h2>
+            </div>
+        </div>
 
-    <?php include 'block/footer.php';?>
+        <div class="container my-5">
+            <div class="row g-4">
+                <!-- Bloc 1 -->
+                <div class="col-md-6">
+                    <div class="p-4 text-white rounded shadow" style="background-color: var(--bg);">
+                        <h3>Titre du Bloc 1</h3>
+                        <p>Voici le texte du premier bloc avec un fond bleu foncé.</p>
+                    </div>
+                </div>
+
+                <!-- Bloc 2 -->
+                <div class="col-md-6">
+                    <div class="p-4 text-white rounded shadow" style="background-color: var(--bg);">
+                        <h3>Titre du Bloc 2</h3>
+                        <p>Voici le texte du deuxième bloc également avec un fond bleu foncé.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <?php include 'block/footer.php';?>
 
 </body>
->>>>>>> e059ad9 (index terminé)
 </html>
