@@ -29,6 +29,9 @@
     <div class="copyright">
         © <span id="year"></span> Copyright Fondation de l'Armée du Salut Tous droits réservés
     </div>
+    <button type="button" class="btn btn-danger btn-lg rounded-circle shadow" id="btnTop" title="Retour en haut">
+        <i class="bi-chevron-up" style="font-size: 1.5rem;"></i>
+    </button>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script>

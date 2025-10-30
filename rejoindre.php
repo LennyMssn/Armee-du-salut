@@ -6,7 +6,9 @@
     <body>
         <header><?php require_once 'block/nav.php'; ?></header>
         <main>
-            // coder ici
+            <section class="banner my-5 text-center" role="banner" aria-label="Bannière Nous rejoindre">
+                <div class="label">NOUS REJOINDRE</div>
+            </section>
         </main>
         <footer><?php require_once 'block/footer.php'; ?></footer>
     </body>
