@@ -6,11 +6,6 @@
     <header><?php require_once 'block/nav.php'; ?></header>
     <main>
 
-<<<<<<< HEAD
-    </main>
-    <footer><?php require_once 'block/footer.php'; ?></footer>
-    </body>
-=======
     <header>
         <div class="conteneur-image">
             <img src="assets/images/homepagePic.jpg" id="imageAccueil" alt="Image d'accueil">
