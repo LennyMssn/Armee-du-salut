@@ -287,3 +287,155 @@ textarea {
     background-color: #d63b3b;
     border-radius: 2px;
 }
+
+/* actu.php */
+.titre-actu:before {
+    content: "📰";
+}
+.actu-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff0000;
+    height: 20vh;
+    color: white;
+    text-align: center;
+}
+.all-actu {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 20%;
+    background-color: #f1f1f1;
+    gap: 5%;
+}
+.primary-actu {
+    display:flex;
+    flex-direction: row;
+    border-radius: 10px;
+    align-items: stretch;
+    background-color: white;
+}
+.image-container {
+    position: relative;
+    width: 40%;
+    flex-shrink: 0;
+}
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: block;
+}
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.date-tag {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.date {
+    color: #8c8c8c;
+}
+.tag {
+    color: red;
+    background-color: #fbdcdc;
+    border-radius: 10px;
+    padding: 1% 2%;
+}
+.info-actu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5% 7%;
+}
+.btn-actu {
+    background-color: red;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    padding: 1% 5%;
+    transition: 150ms;
+}
+.btn-actu:hover {
+    background-color: #ff7d7d;
+}
+.filter {
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+}
+.filter button {
+    padding: 5px 15px;
+}
+.filter .filtre-btn {
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+    border-radius: 10px;
+    transition: 150ms
+}
+.filter .filtre-btn:not(.active):hover {
+    background-color: #ff7676;
+    color: white;
+    border: 1px solid #ff7676;
+}
+.filter .active {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+.blocs-actu {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+.blocs-actu .article-actu {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 435px;
+    border-radius: 10px;
+    margin-bottom: 7%;
+}
+.article-actu img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: block;
+}
+
+.all-actu > div, article {
+    margin-bottom: 3%;
+}
+.blocs-actu a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    width: 30%;
+}
+.blocs-actu a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+.blocs-actu a:hover {
+    color: red;
+}
