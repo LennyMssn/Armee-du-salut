@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <?php require_once 'block/head.php';?>
+<script src="script.js"></script>
 <body>
 <header><?php require_once 'block/nav.php'; ?></header>
 <main>
@@ -82,6 +83,18 @@
                         </div>
                     </article>
                 </a>
+                <a href="https://armeedusalut.fr/blog/actualites/centre-penitentiaire-lutterbach-travail/">
+                    <article class="article-actu" data-tag="actualite">
+                        <img src="/assets/images/actualite4.jpg" alt="Homme et femme en train de travailler devant un ordinateur dans un espace de coworking">
+                        <div class="info-actu">
+                            <div class="date-tag">
+                                <p class="heure">17 septembre 2025</p>
+                                <p class="tag">Actualités</p>
+                            </div>
+                            <h2>La porte de la prison est aussi une porte de sortie</h2>
+                        </div>
+                    </article>
+                </a>
                 <a href="https://armeedusalut.fr/blog/temoignages/inconditionnalite-accueil-etablissements/">
                     <article class="article-actu" data-tag="temoignage">
                         <img src="/assets/images/temoignage1.jpg" alt="Un homme et une femme souriant à table avec des plateaux-repas">
@@ -91,6 +104,18 @@
                                 <p class="tag">Témoignages</p>
                             </div>
                             <h2>Dans nos établissements : un engagement quotidien</h2>
+                        </div>
+                    </article>
+                </a>
+                <a href="https://armeedusalut.fr/blog/actualites/centre-penitentiaire-lutterbach-travail/">
+                    <article class="article-actu" data-tag="actualite">
+                        <img src="/assets/images/actualite5.jpg" alt="Homme et femme en train de travailler devant un ordinateur dans un espace de coworking">
+                        <div class="info-actu">
+                            <div class="date-tag">
+                                <p class="heure">16 septembre 2025</p>
+                                <p class="tag">Actualités</p>
+                            </div>
+                            <h2>La médiation animale pour lutter contre l’isolement des personnes handicapées</h2>
                         </div>
                     </article>
                 </a>

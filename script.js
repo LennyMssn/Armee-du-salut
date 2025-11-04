@@ -59,3 +59,28 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const boutons = document.querySelectorAll(".filtre-btn");
+    const articles = document.querySelectorAll(".article-actu");
+
+    boutons.forEach(bouton => {
+        bouton.addEventListener("click", () => {
+            boutons.forEach(btn => btn.classList.remove("active"));
+            bouton.classList.add("active");
+
+            const filtre = bouton.getAttribute("data-filtre");
+
+            articles.forEach(article => {
+                const tag = article.getAttribute("data-tag");
+
+                if (filtre === "all" || tag === filtre) {
+                    article.parentElement.style.display = "flex";
+                    article.style.opacity = "1";
+                } else {
+                    article.parentElement.style.display = "none";
+                }
+            });
+        });
+    });
+});
