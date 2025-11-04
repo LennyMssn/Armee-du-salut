@@ -439,3 +439,10 @@ textarea {
 .blocs-actu a:hover {
     color: red;
 }
+.primary-actu, .article-actu {
+    box-shadow: 5px 10px 20px #c3c3c3;
+    transition: 150ms;
+}
+.primary-actu:hover, .article-actu:hover {
+    box-shadow: 5px 10px 20px #8a8a8a;
+}
