@@ -84,3 +84,26 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+
+// --- Menu burger avec flou d'arrière-plan ---
+document.addEventListener("DOMContentLoaded", () => {
+    const burgerBtn = document.getElementById("burgerBtn");
+    const burgerMenu = document.getElementById("burgerMenu");
+    const mainContent = document.querySelector("main");
+
+    if (burgerBtn && burgerMenu) {
+        burgerBtn.addEventListener("click", () => {
+            burgerMenu.classList.toggle("active");
+            document.body.classList.toggle("menu-open");
+        });
+
+        // Fermer le menu si on clique en dehors
+        window.addEventListener("click", (e) => {
+            if (!burgerMenu.contains(e.target) && !burgerBtn.contains(e.target)) {
+                burgerMenu.classList.remove("active");
+                document.body.classList.remove("menu-open");
+            }
+        });
+    }
+});

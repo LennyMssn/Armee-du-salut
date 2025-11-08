@@ -2,7 +2,7 @@
 <html lang="fr">
     <?php require_once 'block/head.php';?>
 
-    <body>
+    <body class="page-index">
     <header><?php require_once 'block/nav.php'; ?></header>
     <main>
 
@@ -127,34 +127,81 @@
         </div>
     </section>
 
-        <div class="container my-4 text-center">
-            <div class="titre-bleu">
-                <h2 class="mb-0">Armée du Salut</h2>
-            </div>
-        </div>
+        <section class="don-section d-flex align-items-center">
+            <div class="container">
+                <div class="row align-items-center">
 
-        <div class="container my-5">
-            <div class="row g-4">
-                <!-- Bloc 1 -->
-                <div class="col-md-6">
-                    <div class="p-4 text-white rounded shadow" style="background-color: var(--bg);">
-                        <h3>Titre du Bloc 1</h3>
-                        <p>Voici le texte du premier bloc avec un fond bleu foncé.</p>
+                    <!-- Texte gauche -->
+                    <div class="col-lg-6 text-white mb-5 mb-lg-0">
+                        <h1 class="fw-bold mb-4">
+                            Vos dons sont essentiels<br>
+                            pour les actions de l’Armée du Salut, Merci !
+                        </h1>
+                        <p class="lead">
+                            Chaque don compte. Grâce à votre générosité, nos équipes œuvrent chaque jour
+                            pour venir en aide aux personnes vulnérables.
+                        </p>
+                    </div>
+
+                    <!-- Bloc de don -->
+                    <div class="col-lg-6">
+                        <div class="don-box bg-white shadow rounded-4 p-4">
+                            <!-- Onglets -->
+                            <ul class="nav nav-tabs border-0 mb-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active fw-semibold text-danger" href="#">Don action sociale</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-secondary" href="#">Don missions spirituelles</a>
+                                </li>
+                            </ul>
+
+                            <!-- Boutons Don unique / mensuel -->
+                            <div class="btn-group w-100 mb-3" role="group">
+                                <button class="btn btn-danger fw-semibold">Don unique</button>
+                                <button class="btn btn-outline-secondary">❤️ Don mensuel</button>
+                            </div>
+
+                            <!-- Montants -->
+                            <div class="row g-2 mb-3">
+                                <div class="col-6 col-md-3">
+                                    <button class="btn btn-outline-secondary w-100">90 €</button>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <button class="btn btn-danger w-100">150 €</button>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <button class="btn btn-outline-secondary w-100">250 €</button>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <button class="btn btn-outline-secondary w-100">500 €</button>
+                                </div>
+                            </div>
+
+                            <!-- Montant libre -->
+                            <div class="input-group mb-3">
+                                <input type="number" class="form-control" placeholder="Montant libre">
+                                <span class="input-group-text">€</span>
+                            </div>
+
+                            <!-- Réduction fiscale -->
+                            <p class="small text-secondary bg-light p-2 rounded mb-3">
+                                Soit <strong>38 €</strong> après <a href="#" class="text-decoration-none text-primary">réduction fiscale</a>
+                                (dans la limite de 20 % du revenu imposable).
+                            </p>
+
+                            <!-- Bouton don -->
+                            <button class="btn btn-danger w-100 fw-bold py-2 rounded-pill">FAIRE UN DON</button>
+
+                            <!-- Crédit -->
+                            <p class="text-center text-muted small mt-3 mb-0">
+                                Powered by <strong>RGOODS</strong>
+                            </p>
+                        </div>
                     </div>
                 </div>
-
-                <!-- Bloc 2 -->
-                <div class="col-md-6">
-                    <div class="p-4 text-white rounded shadow" style="background-color: var(--bg);">
-                        <h3>Titre du Bloc 2</h3>
-                        <p>Voici le texte du deuxième bloc également avec un fond bleu foncé.</p>
-                    </div>
-                </div>
             </div>
-        </div>
-
-
-
+        </section>
 
         <?php include 'block/footer.php';?>
 
