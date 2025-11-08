@@ -43,7 +43,7 @@
                                 <p class="heure">7 octobre 2025</p>
                                 <p class="tag">Action en cours</p>
                             </div>
-                            <h2>Gagner en autonomie et s’épanouir</h2>
+                            <h3>Gagner en autonomie et s’épanouir</h3>
                         </div>
                     </article>
                 </a>
@@ -55,7 +55,7 @@
                                 <p class="heure">1 octobre 2025</p>
                                 <p class="tag">Actualités</p>
                             </div>
-                            <h2>Moi demain : promouvoir la parole et le parcours de vie</h2>
+                            <h3>Moi demain : promouvoir la parole et le parcours de vie</h3>
                         </div>
                     </article>
                 </a>
@@ -67,7 +67,7 @@
                                 <p class="heure">29 septembre 2025</p>
                                 <p class="tag">Actualités</p>
                             </div>
-                            <h2>Les jeunes vulnérables au cœur des combats de la Fondation</h2>
+                            <h3>Les jeunes vulnérables au cœur des combats de la Fondation</h3>
                         </div>
                     </article>
                 </a>
@@ -79,7 +79,7 @@
                                 <p class="heure">26 septembre 2025</p>
                                 <p class="tag">Action en cours</p>
                             </div>
-                            <h2>A Lyon, un nouveau refuge pour les mères isolées et leurs enfants</h2>
+                            <h3>A Lyon, un nouveau refuge pour les mères isolées et leurs enfants</h3>
                         </div>
                     </article>
                 </a>
@@ -91,7 +91,7 @@
                                 <p class="heure">17 septembre 2025</p>
                                 <p class="tag">Actualités</p>
                             </div>
-                            <h2>La porte de la prison est aussi une porte de sortie</h2>
+                            <h3>La porte de la prison est aussi une porte de sortie</h3>
                         </div>
                     </article>
                 </a>
@@ -103,7 +103,7 @@
                                 <p class="heure">16 septembre 2025</p>
                                 <p class="tag">Témoignages</p>
                             </div>
-                            <h2>Dans nos établissements : un engagement quotidien</h2>
+                            <h3>Dans nos établissements : un engagement quotidien</h3>
                         </div>
                     </article>
                 </a>
@@ -115,7 +115,7 @@
                                 <p class="heure">16 septembre 2025</p>
                                 <p class="tag">Actualités</p>
                             </div>
-                            <h2>La médiation animale pour lutter contre l’isolement des personnes handicapées</h2>
+                            <h3>La médiation animale pour lutter contre l’isolement des personnes handicapées</h3>
                         </div>
                     </article>
                 </a>
@@ -127,7 +127,7 @@
                                 <p class="heure">15 septembre 2025</p>
                                 <p class="tag">Témoignages</p>
                             </div>
-                            <h2>La musicothérapie en EHPAD</h2>
+                            <h3>La musicothérapie en EHPAD</h3>
                         </div>
                     </article>
                 </a>

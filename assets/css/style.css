@@ -451,6 +451,83 @@ textarea {
     box-shadow: 5px 10px 20px #8a8a8a;
 }
 
+@media screen and (max-width: 1250px) {
+    .all-actu {
+        padding: 5% 10%;
+    }
+
+    .blocs-actu {
+        gap: 3%;
+    }
+
+    .blocs-actu a {
+        width: 45%;
+    }
+
+    .primary-actu {
+        flex-direction: column;
+    }
+
+    .image-container {
+        width: 100%;
+        height: 250px;
+    }
+
+    .info-actu {
+        margin: 5%;
+    }
+}
+
+/* Mobiles (jusqu’à 768px) */
+@media screen and (max-width: 768px) {
+    .all-actu {
+        padding: 5%;
+    }
+
+    .filter {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .filter .filtre-btn {
+        font-size: 0.9rem;
+        margin: 3px 0;
+    }
+
+    .blocs-actu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blocs-actu a {
+        width: 90%;
+    }
+
+    .article-actu {
+        height: auto;
+    }
+
+    .info-actu h2 {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .date-tag {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .tag {
+        font-size: 0.9rem;
+        padding: 3px 8px;
+    }
+
+    .heure {
+        font-size: 0.9rem;
+    }
+}
+
+
 
 /* Section principale */
 .don-section {
