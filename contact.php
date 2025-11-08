@@ -5,6 +5,10 @@
         <body>
             <header><?php require_once 'block/nav.php'; ?></header>
             <main>
+
+                <section class="text-center text-white py-4" style="background-color:#1B1E5B;">
+                    <h2 class="fw-bold mb-0">NOUS CONTACTER</h2>
+                </section>
                 <section class="social-section">
                     <div class="social-line"></div>
 
@@ -27,7 +31,7 @@
 
 
                 <section class="contact-form container my-5">
-                    <h2 class="text-center mb-4">NOUS CONTACTER</h2>
+                    <h2 class="text-center mb-4">ENVOYEZ NOUS UN MESSAGE</h2>
 
                     <form action="traitement_contact.php" method="POST" class="contact-form-inner" novalidate>
                         <div class="row mb-3">

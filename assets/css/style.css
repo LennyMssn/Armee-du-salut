@@ -29,6 +29,7 @@ body.page-index main {
 /* Navbar */
 .main-nav {
     position: fixed;
+    min-height: 80px;
     top: 0;
     left: 0;
     width: 100%;
@@ -47,6 +48,9 @@ body.page-index main {
 .navbar-brand .logo {
     height: 70px;
     padding-left: 30px;
+}
+.logo {
+    height: 60px;
 }
 
 .nav-hidden {
@@ -184,7 +188,7 @@ body.page-index main {
 .social-section {
     text-align: center;
     margin: 40px 0;
-    margin-top: 120px;
+    margin-top: 30px;
 }
 
 .social-line {
