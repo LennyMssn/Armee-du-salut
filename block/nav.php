@@ -11,11 +11,11 @@
 
         <div class="collapse navbar-collapse" id="navbarMenu">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
-                <li class="nav-item"><a class="nav-link" href="/Armee-du-salut/actions.php">Actions sociales</a></li>
-                <li class="nav-item"><a class="nav-link" href="/Armee-du-salut/actu.php">Actualités</a></li>
-                <li class="nav-item"><a class="nav-link" href="/Armee-du-salut/rejoindre.php">Nous rejoindre</a></li>
-                <li class="nav-item"><a class="nav-link" href="/Armee-du-salut/contact.php">Contact</a></li>
-                <li class="nav-item"><a class="btn btn-danger ms-lg-2" href="/Armee-du-salut/Don.php">Don</a></li>
+                <li class="nav-item"><a class="nav-link" href="../actions.php">Actions sociales</a></li>
+                <li class="nav-item"><a class="nav-link" href="../actu.php">Actualités</a></li>
+                <li class="nav-item"><a class="nav-link" href="../rejoindre.php">Nous rejoindre</a></li>
+                <li class="nav-item"><a class="nav-link" href="../contact.php">Contact</a></li>
+                <li class="nav-item"><a class="btn btn-danger ms-lg-2" href="../Don.php">Don</a></li>
 
                 <li class="nav-item dropdown ms-lg-3">
                     <button class="btn btn-outline-light dropdown-toggle" type="button" id="accountMenuButton"
