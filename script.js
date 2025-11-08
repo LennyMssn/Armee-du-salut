@@ -1,18 +1,4 @@
 // Toggle menu dropdown
-function toggleMenu() {
-    const menu = document.getElementById("dropdownMenu");
-    menu.style.display = menu.style.display === "block" ? "none" : "block";
-}
-
-// Fermer le menu si on clique en dehors
-window.onclick = function(event) {
-    if (!event.target.matches('.account-btn')) {
-        const menu = document.getElementById("dropdownMenu");
-        if (menu && menu.style.display === "block") {
-            menu.style.display = "none";
-        }
-    }
-}
 
 // Validation des champs requis
 document.addEventListener("DOMContentLoaded", () => {

@@ -33,6 +33,7 @@
         <i class="bi-chevron-up" style="font-size: 1.5rem;"></i>
     </button>
 </footer>
+<script src="../script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script>
     document.getElementById('year').textContent = new Date().getFullYear();

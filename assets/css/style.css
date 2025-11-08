@@ -22,6 +22,10 @@ body.page-index main {
     margin-top: 0;
 }
 
+.login-page main {
+    margin-bottom: 80px;
+}
+
 /* Navbar */
 .main-nav {
     position: fixed;
