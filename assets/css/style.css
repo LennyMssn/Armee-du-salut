@@ -656,3 +656,165 @@ body.menu-open footer {
     filter: blur(8px);
     transition: filter 0.3s ease;
 }
+
+
+/* === PAGE DE DON === */
+.don-section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.don-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.don-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.don-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.don-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
+}
+
+.don-texte {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.don-box {
+    background: white;
+    color: black;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    width: 420px;
+    max-width: 90%;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.don-title {
+    display: inline-flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.2rem;
+    color: #000;
+    white-space: nowrap;
+    margin: 0 auto 1rem;
+}
+
+.don-title .badge {
+    background-color: #e60000;
+    color: white;
+    padding: 6px 22px 7px;
+    border-radius: 4px;
+    font-weight: 800;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.don-options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.opt {
+    flex: 1;
+    border: 1px solid #ccc;
+    background: #fff;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 2px;
+    transition: all 0.2s ease;
+}
+
+.opt.active {
+    background-color: #e0f0f0;
+    border-color: #007b8a;
+}
+
+.don-amounts {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.amt {
+    flex: 1;
+    border: 1px solid #ccc;
+    background: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: all 0.2s ease;
+}
+
+.amt.active {
+    background-color: #d9edf7;
+    border-color: #007b8a;
+}
+
+.amt-input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.deduction {
+    margin-top: 10px;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+
+
+.don-submit {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.don-submit:hover {
+    background-color: darkred;
+}

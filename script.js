@@ -93,3 +93,47 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
+//don
+
+document.addEventListener("DOMContentLoaded", () => {
+    const freqBtns = document.querySelectorAll(".opt");
+    const amtBtns  = document.querySelectorAll(".amt");
+    const input    = document.querySelector(".amt-input");
+    const deduction = document.querySelector(".deduction strong");
+
+    // Choix de fréquence
+    freqBtns.forEach(btn=>{
+        btn.addEventListener("click",()=>{
+            freqBtns.forEach(b=>b.classList.remove("active"));
+            btn.classList.add("active");
+        });
+    });
+
+    // Choix du montant
+    amtBtns.forEach(btn=>{
+        btn.addEventListener("click",()=>{
+            amtBtns.forEach(b=>b.classList.remove("active"));
+            btn.classList.add("active");
+            input.value="";
+            updateDeduction(parseFloat(btn.textContent));
+        });
+    });
+
+    // Montant libre
+    input.addEventListener("input",()=>{
+        const val=parseFloat(input.value);
+        if(!isNaN(val)&&val>0){
+            amtBtns.forEach(b=>b.classList.remove("active"));
+            updateDeduction(val);
+        }
+    });
+
+    // Calcul déduction (25 % du montant)
+    function updateDeduction(montant){
+        deduction.textContent=(montant*0.25).toFixed(2)+" €";
+    }
+
+    // Par défaut : 15 €
+    updateDeduction(15);
+});
