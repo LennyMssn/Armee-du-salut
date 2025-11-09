@@ -3,7 +3,7 @@
     <?php require_once 'block/head.php';?>
 
     <body class="page-index">
-    <header><?php require_once 'block/nav.php'; ?></header>
+    <header><?php require_once 'block/nav2.php'; ?></header>
     <main>
 
     <header>
