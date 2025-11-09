@@ -127,7 +127,7 @@
         </div>
     </section>
 
-        <section class="don-section d-flex align-items-center">
+        <section class="don-section1 d-flex align-items-center">
             <div class="container">
                 <div class="row align-items-center">
 

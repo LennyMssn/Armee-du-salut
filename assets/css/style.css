@@ -533,7 +533,7 @@ textarea {
 
 
 /* Section principale */
-.don-section {
+.don-section1 {
     min-height: 100vh;
     background: linear-gradient(90deg, rgba(0,0,50,0.8) 40%, rgba(255,255,255,0) 100%)center/cover no-repeat;
     color: white;
