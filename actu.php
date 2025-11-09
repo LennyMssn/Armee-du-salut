@@ -13,7 +13,7 @@
         <div class="all-actu">
             <article class="primary-actu" data-tag="Actualités">
                 <div class="image-container">
-                    <img src="assets/images/actualite1.jpg" alt="Familles touchées par les ouragans">
+                    <img src="assets/images/actualite1.webp" alt="Familles touchées par les ouragans">
                     <span class="badge">À la une</span>
                 </div>
 
@@ -37,7 +37,7 @@
             <div class="blocs-actu">
                 <a href="https://armeedusalut.fr/blog/temoignages/gagner-en-autonomie-et-sepanouir/">
                     <article class="article-actu" data-tag="action-en-cours">
-                        <img src="/assets/images/action-en-cours1.jpg" alt="Personnes travaillant sur un chantier extérieur avec un véhicule utilitaire">
+                        <img src="/assets/images/action-en-cours1.webp" alt="Personnes travaillant sur un chantier extérieur avec un véhicule utilitaire">
                         <div class="info-actu">
                             <div class="date-tag">
                                 <p class="heure">7 octobre 2025</p>
@@ -49,7 +49,7 @@
                 </a>
                 <a href="https://armeedusalut.fr/blog/actualites/moi-demain-promotion-parcours-vie/">
                     <article class="article-actu" data-tag="actualite">
-                        <img src="/assets/images/actualite2.jpg" alt="Deux femmes discutant lors d’un événement">
+                        <img src="/assets/images/actualite2.webp" alt="Deux femmes discutant lors d’un événement">
                         <div class="info-actu">
                             <div class="date-tag">
                                 <p class="heure">1 octobre 2025</p>
@@ -61,7 +61,7 @@
                 </a>
                 <a href="https://armeedusalut.fr/blog/actualites/jeunes-vulnerables-combats-armee-du-salut/">
                     <article class="article-actu" data-tag="actualite">
-                        <img src="/assets/images/actualite3.jpg" alt="Homme et femme en train de travailler devant un ordinateur dans un espace de coworking">
+                        <img src="/assets/images/actualite3.webp" alt="Homme et femme en train de travailler devant un ordinateur dans un espace de coworking">
                         <div class="info-actu">
                             <div class="date-tag">
                                 <p class="heure">29 septembre 2025</p>
@@ -73,7 +73,7 @@
                 </a>
                 <a href="https://armeedusalut.fr/blog/actualites/colline-lyon-meres-isolees/">
                     <article class="article-actu" data-tag="action-en-cours">
-                        <img src="/assets/images/action-en-cours2.jpg" alt="Entrée d’un bâtiment avec le panneau 'La Colline' et une porte vitrée">
+                        <img src="/assets/images/action-en-cours2.webp" alt="Entrée d’un bâtiment avec le panneau 'La Colline' et une porte vitrée">
                         <div class="info-actu">
                             <div class="date-tag">
                                 <p class="heure">26 septembre 2025</p>
@@ -85,7 +85,7 @@
                 </a>
                 <a href="https://armeedusalut.fr/blog/actualites/centre-penitentiaire-lutterbach-travail/">
                     <article class="article-actu" data-tag="actualite">
-                        <img src="/assets/images/actualite4.jpg" alt="Homme et femme en train de travailler devant un ordinateur dans un espace de coworking">
+                        <img src="/assets/images/actualite4.webp" alt="Homme et femme en train de travailler devant un ordinateur dans un espace de coworking">
                         <div class="info-actu">
                             <div class="date-tag">
                                 <p class="heure">17 septembre 2025</p>
@@ -97,7 +97,7 @@
                 </a>
                 <a href="https://armeedusalut.fr/blog/temoignages/inconditionnalite-accueil-etablissements/">
                     <article class="article-actu" data-tag="temoignage">
-                        <img src="/assets/images/temoignage1.jpg" alt="Un homme et une femme souriant à table avec des plateaux-repas">
+                        <img src="/assets/images/temoignage1.webp" alt="Un homme et une femme souriant à table avec des plateaux-repas">
                         <div class="info-actu">
                             <div class="date-tag">
                                 <p class="heure">16 septembre 2025</p>
@@ -109,7 +109,7 @@
                 </a>
                 <a href="https://armeedusalut.fr/blog/actualites/centre-penitentiaire-lutterbach-travail/">
                     <article class="article-actu" data-tag="actualite">
-                        <img src="/assets/images/actualite5.jpg" alt="Homme et femme en train de travailler devant un ordinateur dans un espace de coworking">
+                        <img src="/assets/images/actualite5.webp" alt="Homme et femme en train de travailler devant un ordinateur dans un espace de coworking">
                         <div class="info-actu">
                             <div class="date-tag">
                                 <p class="heure">16 septembre 2025</p>
@@ -121,7 +121,7 @@
                 </a>
                 <a href="https://armeedusalut.fr/blog/temoignages/musicotherapie-ehpad-nantes/">
                     <article class="article-actu" data-tag="temoignage">
-                        <img src="/assets/images/temoignage2.jpg" alt="Une animatrice interagit avec des personnes âgées dans une salle d’activité">
+                        <img src="/assets/images/temoignage2.webp" alt="Une animatrice interagit avec des personnes âgées dans une salle d’activité">
                         <div class="info-actu">
                             <div class="date-tag">
                                 <p class="heure">15 septembre 2025</p>
