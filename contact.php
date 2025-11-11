@@ -6,8 +6,9 @@
             <header><?php require_once 'block/nav.php'; ?></header>
             <main>
 
-                <section class="text-center text-white py-4" style="background-color:#1B1E5B;">
-                    <h2 class="fw-bold mb-0">NOUS CONTACTER</h2>
+                <section class="banniere-contact" >
+                    <h1>Nous contacter</h1>
+                    <p>Restons en lien, l’Armée du Salut est à votre écoute.</p>
                 </section>
                 <section class="social-section">
                     <div class="social-line"></div>

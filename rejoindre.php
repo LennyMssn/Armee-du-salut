@@ -6,8 +6,9 @@
     <body>
         <header><?php require_once 'block/nav.php'; ?></header>
         <main>
-            <section class="text-center text-white py-4" style="background-color:#1B1E5B;">
-                <h2 class="fw-bold mb-0">NOUS REJOINDRE</h2>
+            <section class="banniere-rej">
+                <h1>Nous rejoindre</h1>
+                <p>Rejoignez notre mission, ensemble, changeons des vies chaque jour.</p>
             </section>
 
             <section class="container mb-5 rejoindre-section">
@@ -22,9 +23,7 @@
                             Ces postes sont nombreux et variés : assistants sociaux, éducateurs spécialisés, agents techniques,
                             infirmiers, médecins, psychologues, personnels administratifs...
                         </p>
-                        <p>
-                            LIEN LINKEDIN
-                        </p>
+                        <button onclick="window.location.href='https://www.linkedin.com/company/fondation-armee-du-salut';" class="btn-rejoindre">Voir nos offres</button>
                     </div>
                 </div>
                 <div class="row align-items-center flex-md-row-reverse mb-5">
@@ -37,9 +36,7 @@
                             Au côté des professionnels, les bénévoles sont une force au service des personnes en situation de précarité.
                             Leur rôle est essentiel : accueil, accompagnement, écoute, aide alimentaire, animation d’ateliers, etc.
                         </p>
-                        <p>
-                            LIEN MESSAGE
-                        </p>
+                        <button onclick="window.location.href='contact.php';" class="btn-rejoindre">Nous contacter par message</button>
                     </div>
                 </div>
                 <div class="row align-items-center mb-5">
@@ -52,9 +49,7 @@
                             Le service civique s’adresse aux jeunes de 16 à 25 ans (jusqu’à 30 ans pour les personnes en situation de handicap),
                             désireux de s’investir dans une mission d’intérêt général, au sein des établissements ou foyers de la Fondation.
                         </p>
-                        <p>
-                            LIEN MESSAGE
-                        </p>
+                        <button onclick="window.location.href='contact.php';" class="btn-rejoindre">Nous contacter par message</button>
                     </div>
                 </div>
                 <div class="row align-items-center flex-md-row-reverse mb-5">
@@ -68,9 +63,7 @@
                             Ils animent les postes locaux, gèrent les activités sociales et mènent des actions de soutien
                             et d’accompagnement des personnes vulnérables dans leurs communautés.
                         </p>
-                        <p>
-                            LIEN MESSAGE
-                        </p>
+                        <button onclick="window.location.href='contact.php';" class="btn-rejoindre">Nous contacter par message</button>
                     </div>
                 </div>
 
