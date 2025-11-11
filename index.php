@@ -3,7 +3,7 @@
     <?php require_once 'block/head.php';?>
 
     <body class="page-index">
-    <header><?php require_once 'block/nav.php'; ?></header>
+    <header><?php require_once 'block/nav2.php'; ?></header>
     <main>
 
     <header>
@@ -127,7 +127,7 @@
         </div>
     </section>
 
-        <section class="don-section d-flex align-items-center">
+        <section class="don-section1 d-flex align-items-center">
             <div class="container">
                 <div class="row align-items-center">
 

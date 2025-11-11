@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark main-nav" style="background-color: #0f1724;">
+<nav class="navbar navbar-expand-lg navbar-dark main-nav" style="background-color: rgba(0,0,0,0.2);">
     <div class="container-fluid">
         <a class="navbar-brand" href="/SAE/index.php">
             <img src="/SAE/assets/images/Logo_de_l'Armée_du_Salut.png" alt="Logo" class="logo">
@@ -30,8 +30,8 @@
                         <li><a class="dropdown-item" href="/SAE/login.php">Connexion</a></li>
                     </ul>
                 </li>
+
             </ul>
         </div>
     </div>
 </nav>
-
