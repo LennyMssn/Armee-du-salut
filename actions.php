@@ -1,112 +1,102 @@
 <!DOCTYPE html>
 <html lang="fr">
-<?php require_once 'block/head.php';?>
+<head>
+    <title>Nous rejoindre - Armée du Salut</title>
+    <?php require_once 'block/head.php';?>
+</head>
 
 <body>
 <header><?php require_once 'block/nav.php'; ?></header>
-<main>
-    <section class="actu-section">
-        <h1 class ="titre-actu" >Nos actions</h1>
-        <p>Chaque jour, les équipes de l’Armée du Salut agissent concrètement pour répondre aux défis sociaux et humanitaires.
-            Découvrez les différents champs d’actions déployés à travers la France pour soutenir, protéger et accompagner les personnes vulnérables dans leur quotidien et favoriser leur retour vers l’autonomie.</p>
-    </section>
-    <article class="actions">
-        <div class="all-actions">
-            <h1>Champs d'action</h1>
-            <div class="blocs-actions">
-                <a href="https://www.armeedusalut.fr/champs-action/actions-rue-premier-accueil/">
-                    <article class="article-actions">
-                        <img src="/assets/images/actions1.webp" alt="Personnes travaillant sur un chantier extérieur avec un véhicule utilitaire">
-                        <div class="overlay">
-                            <h3 class="titre-carte">Action Rue & Premier Accueil</h3>
-                        </div>
-                    </article>
-                </a>
-                <a href="https://www.armeedusalut.fr/champs-action/grand-age/">
-                    <article class="article-actions">
-                        <img src="/assets/images/actions2.webp" alt="Personnes travaillant sur un chantier extérieur avec un véhicule utilitaire">
-                        <div class="overlay">
-                            <h3 class="titre-carte">Grand Âge</h3>
-                        </div>
-                    </article>
-                </a>
-                <a href="https://www.armeedusalut.fr/champs-action/handicap/">
-                    <article class="article-actions">
-                        <img src="/assets/images/actions3.webp" alt="Personnes travaillant sur un chantier extérieur avec un véhicule utilitaire">
-                        <div class="overlay">
-                            <h3 class="titre-carte">Handicap</h3>
-                        </div>
-                    </article>
-                </a>
-                <a href="https://www.armeedusalut.fr/champs-action/hebergement-logement/">
-                    <article class="article-actions">
-                        <img src="/assets/images/actions4.webp" alt="Personnes travaillant sur un chantier extérieur avec un véhicule utilitaire">
-                        <div class="overlay">
-                            <h3 class="titre-carte">Hébergement et logement</h3>
-                        </div>
-                    </article>
-                </a>
-                <a href="https://www.armeedusalut.fr/champs-action/insertion-professionnelle/">
-                    <article class="article-actions">
-                        <img src="/assets/images/actions5.webp" alt="Personnes travaillant sur un chantier extérieur avec un véhicule utilitaire">
-                        <div class="overlay">
-                            <h3 class="titre-carte">Insertion professionnelle</h3>
-                        </div>
-                    </article>
-                </a>
-                <a href="https://www.armeedusalut.fr/champs-action/sante-precarite/">
-                    <article class="article-actions">
-                        <img src="/assets/images/actions6.webp" alt="Personnes travaillant sur un chantier extérieur avec un véhicule utilitaire">
-                        <div class="overlay">
-                            <h3 class="titre-carte">Santé et précarité</h3>
-                        </div>
-                    </article>
-                </a>
-                <a href="https://www.armeedusalut.fr/champs-action/enfance-education-populaire/">
-                    <article class="article-actions">
-                        <img src="/assets/images/actions7.webp" alt="Personnes travaillant sur un chantier extérieur avec un véhicule utilitaire">
-                        <div class="overlay">
-                            <h3 class="titre-carte">Enfance et éducation populaire</h3>
-                        </div>
-                    </article>
-                </a>
-                <a href="https://www.armeedusalut.fr/champs-action/aide-alimentaire/">
-                    <article class="article-actions">
-                        <img src="/assets/images/actions8.webp" alt="Personnes travaillant sur un chantier extérieur avec un véhicule utilitaire">
-                        <div class="overlay">
-                            <h3 class="titre-carte">Aide alimentaire</h3>
-                        </div>
-                    </article>
-                </a>
-                <a href="https://www.armeedusalut.fr/champs-action/soins-medicaux-readaptation/">
-                    <article class="article-actions">
-                        <img src="/assets/images/actions9.webp" alt="Personnes travaillant sur un chantier extérieur avec un véhicule utilitaire">
-                        <div class="overlay">
-                            <h3 class="titre-carte">Soins médicaux et de réadaptation</h3>
-                        </div>
-                    </article>
-                </a>
-                <a href="https://www.armeedusalut.fr/champs-action/actions-internationales/">
-                    <article class="article-actions">
-                        <img src="/assets/images/actions10.webp" alt="Personnes travaillant sur un chantier extérieur avec un véhicule utilitaire">
-                        <div class="overlay">
-                            <h3 class="titre-carte">Actions internationales</h3>
-                        </div>
-                    </article>
-                </a>
-                <a href="https://www.armeedusalut.fr/champs-action/actions-spirituelles/">
-                    <article class="article-actions">
-                        <img src="/assets/images/action11.webp" alt="Personnes travaillant sur un chantier extérieur avec un véhicule utilitaire">
-                        <div class="overlay">
-                            <h3 class="titre-carte">Actions spirituelles</h3>
-                        </div>
-                    </article>
-                </a>
 
+<main>
+    <section class="hero-banner">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Rejoignez notre mission</h1>
+            <p class="lead mx-auto" style="max-width: 700px;">
+                Que vous soyez professionnel, bénévole ou jeune en quête de sens,
+                il y a une place pour vous au sein de l'Armée du Salut.
+            </p>
+        </div>
+    </section>
+
+    <section class="container py-5">
+        <!-- 1. TRAVAILLER -->
+        <div class="row align-items-center mb-5 g-5">
+            <div class="col-md-6">
+                <div class="overflow-hidden rounded-4 shadow-lg">
+                    <img src="assets/images/travailler.jpg" alt="Travailler" class="img-fluid" style="transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <span class="badge bg-danger mb-2 px-3 py-2">Carrière</span>
+                <h2 class="fw-bold mb-3">Travailler pour l'Armée du Salut</h2>
+                <p class="text-secondary mb-4">
+                    Rejoignez un large éventail de métiers du social et du médico-social.
+                    Nous recherchons des assistants sociaux, éducateurs, infirmiers, psychologues et personnels administratifs
+                    prêts à s'investir pour l'humain.
+                </p>
+                <a href="https://www.linkedin.com/company/fondation-armee-du-salut" target="_blank" class="btn btn-danger rounded-pill px-4 py-2 fw-bold shadow-sm">
+                    Consulter nos offres
+                </a>
             </div>
         </div>
-    </article>
+
+        <!-- 2. BÉNÉVOLAT -->
+        <div class="row align-items-center flex-md-row-reverse mb-5 g-5">
+            <div class="col-md-6">
+                <div class="overflow-hidden rounded-4 shadow-lg">
+                    <img src="assets/images/benevolat.jpg" alt="Bénévolat" class="img-fluid" style="transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <span class="badge bg-danger mb-2 px-3 py-2">Solidarité</span>
+                <h2 class="fw-bold mb-3">Devenir bénévole</h2>
+                <p class="text-secondary mb-4">
+                    Les bénévoles sont le cœur de notre action. Accueil, écoute, aide alimentaire ou animation d'ateliers :
+                    votre temps est le plus beau des cadeaux pour les personnes en situation de précarité.
+                </p>
+                <a href="contact.php" class="btn btn-outline-danger rounded-pill px-4 py-2 fw-bold">
+                    Nous proposer votre aide
+                </a>
+            </div>
+        </div>
+
+        <!-- 3. SERVICE CIVIQUE -->
+        <div class="row align-items-center mb-5 g-5">
+            <div class="col-md-6">
+                <div class="overflow-hidden rounded-4 shadow-lg">
+                    <img src="assets/images/service-civique.jpg" alt="Service Civique" class="img-fluid" style="transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <span class="badge bg-danger mb-2 px-3 py-2">Jeunesse</span>
+                <h2 class="fw-bold mb-3">S'engager en service civique</h2>
+                <p class="text-secondary mb-4">
+                    Vous avez entre 16 et 25 ans ? Engagez-vous dans une mission d'intérêt général de 6 à 12 mois.
+                </p>
+                <a href="contact.php" class="btn btn-outline-danger rounded-pill px-4 py-2 fw-bold">En savoir plus</a>
+            </div>
+        </div>
+
+        <!-- 4. OFFICIER -->
+        <div class="row align-items-center flex-md-row-reverse mb-5 g-5">
+            <div class="col-md-6">
+                <div class="overflow-hidden rounded-4 shadow-lg">
+                    <img src="assets/images/devenir-officier.jpg" alt="Officier" class="img-fluid" style="transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <span class="badge bg-danger mb-2 px-3 py-2">Engagement Spirituel</span>
+                <h2 class="fw-bold mb-3">Devenir officier</h2>
+                <p class="text-secondary mb-4">
+                    Les officiers sont les responsables spirituels et administratifs de l'Armée du Salut.
+                </p>
+                <a href="contact.php" class="btn btn-outline-danger rounded-pill px-4 py-2 fw-bold">Contacter un responsable</a>
+            </div>
+        </div>
+    </section>
 </main>
+
 <footer><?php require_once 'block/footer.php'; ?></footer>
 </body>
 </html>

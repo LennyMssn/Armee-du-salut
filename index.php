@@ -1,119 +1,120 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <?php require_once 'block/head.php';?>
+<?php require_once 'block/head.php';?>
 
-    <body class="page-index">
-    <header><?php require_once 'block/nav2.php'; ?></header>
-    <main>
+<body class="page-index">
+<!-- On utilise la nav unique qui gère le scroll -->
+<header><?php require_once 'block/nav.php'; ?></header>
 
-    <header>
-        <div class="conteneur-image">
-            <img src="assets/images/homepagePic.jpg" id="imageAccueil" alt="Image d'accueil">
-            <div class="slogan" >Secourir, réhabiliter, reconstruire des vies</div>
+<main>
+    <!-- HERO SECTION : ACCUEIL -->
+    <section class="position-relative vh-100 d-flex align-items-center justify-content-center text-center text-white"
+             style="background: url('assets/images/homepagePic.jpg') center/cover no-repeat;">
+        <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.4);"></div>
+        <div class="container position-relative z-1">
+            <h1 class="display-2 fw-bold mb-4" style="text-shadow: 2px 2px 10px rgba(0,0,0,0.7);">
+                Secourir, réhabiliter, reconstruire des vies
+            </h1>
+            <a href="Don.php" class="btn btn-danger btn-lg rounded-pill px-5 py-3 fw-bold shadow">AGIR MAINTENANT</a>
         </div>
-    </header>
+    </section>
 
-    <main class="py-5" style="background-color: #0f1724;">
+    <!-- SECTION ACTUALITÉS (Récupérées de actu.php) -->
+    <section class="py-5 bg-light">
         <div class="container">
-            <div class="row g-4 justify-content-center">
+            <div class="d-flex justify-content-between align-items-end mb-4">
+                <h2 class="fw-bold">Dernières actualités</h2>
+                <a href="actu.php" class="text-danger fw-bold text-decoration-none">Voir tout →</a>
+            </div>
 
-                <!-- Actu 1 -->
+            <div class="row g-4">
+                <!-- Actu 1 : Ouragan -->
                 <div class="col-12 col-md-4">
-                    <div class="card h-100 shadow-lg">
-                        <img src="images/actu1.jpg" class="card-img-top" alt="Actualité 1">
-                        <div class="card-body">
-                            <h5 class="card-title text-primary">Titre de l’actualité 1</h5>
-                            <p class="card-text">Actu 1</p>
+                    <div class="custom-card shadow-sm h-100">
+                        <div class="card-img-container">
+                            <img src="assets/images/actualite1.webp" alt="Ouragan Melissa">
+                            <span class="badge bg-danger position-absolute top-0 end-0 m-3">Urgence</span>
+                        </div>
+                        <div class="p-4">
+                            <small class="text-muted">31 octobre 2025</small>
+                            <h5 class="fw-bold mt-2">Aidez les familles touchées par l’ouragan Melissa</h5>
+                            <p class="small text-secondary">L’ouragan Melissa a frappé de plein fouet la Jamaïque, laissant derrière lui un pays dévasté...</p>
+                            <a href="actu.php" class="btn btn-link text-danger p-0 fw-bold text-decoration-none">Lire la suite</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Actu 2 -->
+                <!-- Actu 2 : Autonomie -->
                 <div class="col-12 col-md-4">
-                    <div class="card h-100 shadow-lg">
-                        <img src="images/actu2.jpg" class="card-img-top" alt="Actualité 2">
-                        <div class="card-body">
-                            <h5 class="card-title text-primary">Titre de l’actualité 2</h5>
-                            <p class="card-text">Actu 2</p>
+                    <div class="custom-card shadow-sm h-100">
+                        <div class="card-img-container">
+                            <img src="assets/images/action-en-cours1.webp" alt="Autonomie">
+                        </div>
+                        <div class="p-4">
+                            <small class="text-muted">7 octobre 2025</small>
+                            <h5 class="fw-bold mt-2">Gagner en autonomie et s’épanouir</h5>
+                            <p class="small text-secondary">Découvrez comment nos chantiers d'insertion aident les jeunes à retrouver un chemin professionnel.</p>
+                            <a href="actu.php" class="btn btn-link text-danger p-0 fw-bold text-decoration-none">Lire la suite</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Actu 3 -->
+                <!-- Actu 3 : Moi demain -->
                 <div class="col-12 col-md-4">
-                    <div class="card h-100 shadow-lg">
-                        <img src="images/actu3.jpg" class="card-img-top" alt="Actualité 3">
-                        <div class="card-body">
-                            <h5 class="card-title text-primary">Titre de l’actualité 3</h5>
-                            <p class="card-text">Actu 3</p>
+                    <div class="custom-card shadow-sm h-100">
+                        <div class="card-img-container">
+                            <img src="assets/images/actualite2.webp" alt="Moi demain">
+                        </div>
+                        <div class="p-4">
+                            <small class="text-muted">1 octobre 2025</small>
+                            <h5 class="fw-bold mt-2">Moi demain : promouvoir la parole</h5>
+                            <p class="small text-secondary">Un programme dédié à la promotion du parcours de vie des femmes accueillies dans nos centres.</p>
+                            <a href="actu.php" class="btn btn-link text-danger p-0 fw-bold text-decoration-none">Lire la suite</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </main>
+    </section>
 
-    <section class="py-5 text-center" style="background-color: #ffffff;">
+    <section class="py-5 text-center bg-white">
         <div class="container">
-            <h2 class="mb-4 fw-bold text-uppercase text-dark">Action sociale</h2>
+            <h2 class="mb-5 fw-bold text-uppercase">Nos champs d'action sociale</h2>
 
-            <!-- Carrousel -->
-            <div id="actionsCarousel" class="carousel slide mx-auto p-4 rounded shadow"
-                 data-bs-ride="carousel"
-                 style="max-width: 800px; background-color: #0f1724;">
-                <div class="carousel-inner text-light">
+            <div id="actionsCarousel" class="carousel slide mx-auto shadow-lg rounded-4 overflow-hidden"
+                 data-bs-ride="carousel">
 
+                <!-- Indicateurs (Les petits traits en bas) -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#actionsCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                    <button type="button" data-bs-target="#actionsCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#actionsCarousel" data-bs-slide-to="2"></button>
+                </div>
+
+                <div class="carousel-inner p-5" style="background-color: var(--dark);">
                     <!-- Jeunesse -->
                     <div class="carousel-item active">
-                        <div class="d-flex flex-column align-items-center">
-                            <img src="images/jeunesse.jpg" class="d-block w-50 rounded shadow-sm" alt="Jeunesse">
-                            <h5 class="mt-3">Jeunesse</h5>
-                        </div>
+                        <img src="assets/images/actions7.webp" class="rounded shadow-sm mb-4" style="height: 300px; width: 100%; object-fit: cover;" alt="Jeunesse">
+                        <h3 class="text-white">Enfance & Jeunesse</h3>
+                        <p class="text-light-50 px-md-5">Éduquer, protéger et offrir un avenir à chaque enfant, peu importe son parcours.</p>
                     </div>
 
-                    <!-- Exclusion sociale -->
+                    <!-- Exclusion -->
                     <div class="carousel-item">
-                        <div class="d-flex flex-column align-items-center">
-                            <img src="images/exclusion.jpg" class="d-block w-50 rounded shadow-sm" alt="Exclusion sociale">
-                            <h5 class="mt-3">Exclusion sociale</h5>
-                        </div>
+                        <img src="assets/images/actions1.webp" class="rounded shadow-sm mb-4" style="height: 300px; width: 100%; object-fit: cover;" alt="Exclusion">
+                        <h3 class="text-white">Lutte contre l'Exclusion</h3>
+                        <p class="text-light-50 px-md-5">Accueil de jour, maraudes et aide alimentaire pour les plus démunis.</p>
                     </div>
 
                     <!-- Handicap -->
                     <div class="carousel-item">
-                        <div class="d-flex flex-column align-items-center">
-                            <img src="images/handicap.jpg" class="d-block w-50 rounded shadow-sm" alt="Handicap">
-                            <h5 class="mt-3">Handicap</h5>
-                        </div>
+                        <img src="assets/images/actions3.webp" class="rounded shadow-sm mb-4" style="height: 300px; width: 100%; object-fit: cover;" alt="Handicap">
+                        <h3 class="text-white">Handicap</h3>
+                        <p class="text-light-50 px-md-5">Accompagner vers l'autonomie et favoriser l'inclusion sociale et professionnelle.</p>
                     </div>
-
-                    <!-- Dépendance -->
-                    <div class="carousel-item">
-                        <div class="d-flex flex-column align-items-center">
-                            <img src="images/dependance.jpg" class="d-block w-50 rounded shadow-sm" alt="Dépendance">
-                            <h5 class="mt-3">Dépendance</h5>
-                        </div>
-                    </div>
-
-                    <!-- Actions spécifiques -->
-                    <div class="carousel-item">
-                        <div class="d-flex flex-column align-items-center">
-                            <img src="images/specifique.jpg" class="d-block w-50 rounded shadow-sm" alt="Actions spécifiques">
-                            <h5 class="mt-3">Actions spécifiques</h5>
-                        </div>
-                    </div>
-
-                    <!-- Actions de proximité -->
-                    <div class="carousel-item">
-                        <div class="d-flex flex-column align-items-center">
-                            <img src="images/proximite.jpg" class="d-block w-50 rounded shadow-sm" alt="Actions de proximité">
-                            <h5 class="mt-3">Actions de proximité</h5>
-                        </div>
-                    </div>
-
                 </div>
 
-                <!-- Contrôles -->
+                <!-- Contrôles (Bien vérifier le data-bs-target) -->
                 <button class="carousel-control-prev" type="button" data-bs-target="#actionsCarousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Précédent</span>
@@ -122,88 +123,47 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Suivant</span>
                 </button>
-
             </div>
         </div>
     </section>
 
-        <section class="don-section1 d-flex align-items-center">
-            <div class="container">
-                <div class="row align-items-center">
+    <section class="py-5" style="background: var(--dark); color: white;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <h2 class="display-4 fw-bold">Votre aide est précieuse</h2>
+                    <p class="lead">Grâce à la déduction fiscale de 75%, un don de 100€ ne vous coûte réellement que 25€.</p>
+                </div>
 
-                    <!-- Texte gauche -->
-                    <div class="col-lg-6 text-white mb-5 mb-lg-0">
-                        <h1 class="fw-bold mb-4">
-                            Vos dons sont essentiels<br>
-                            pour les actions de l’Armée du Salut, Merci !
-                        </h1>
-                        <p class="lead">
-                            Chaque don compte. Grâce à votre générosité, nos équipes œuvrent chaque jour
-                            pour venir en aide aux personnes vulnérables.
-                        </p>
-                    </div>
+                <div class="col-lg-6">
+                    <div class="don-container text-dark">
+                        <h3 class="text-center fw-bold mb-4">Soutenir nos actions</h3>
 
-                    <!-- Bloc de don -->
-                    <div class="col-lg-6">
-                        <div class="don-box bg-white shadow rounded-4 p-4">
-                            <!-- Onglets -->
-                            <ul class="nav nav-tabs border-0 mb-3">
-                                <li class="nav-item">
-                                    <a class="nav-link active fw-semibold text-danger" href="#">Don action sociale</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-secondary" href="#">Don missions spirituelles</a>
-                                </li>
-                            </ul>
-
-                            <!-- Boutons Don unique / mensuel -->
-                            <div class="btn-group w-100 mb-3" role="group">
-                                <button class="btn btn-danger fw-semibold">Don unique</button>
-                                <button class="btn btn-outline-secondary">❤️ Don mensuel</button>
-                            </div>
-
-                            <!-- Montants -->
-                            <div class="row g-2 mb-3">
-                                <div class="col-6 col-md-3">
-                                    <button class="btn btn-outline-secondary w-100">90 €</button>
-                                </div>
-                                <div class="col-6 col-md-3">
-                                    <button class="btn btn-danger w-100">150 €</button>
-                                </div>
-                                <div class="col-6 col-md-3">
-                                    <button class="btn btn-outline-secondary w-100">250 €</button>
-                                </div>
-                                <div class="col-6 col-md-3">
-                                    <button class="btn btn-outline-secondary w-100">500 €</button>
-                                </div>
-                            </div>
-
-                            <!-- Montant libre -->
-                            <div class="input-group mb-3">
-                                <input type="number" class="form-control" placeholder="Montant libre">
-                                <span class="input-group-text">€</span>
-                            </div>
-
-                            <!-- Réduction fiscale -->
-                            <p class="small text-secondary bg-light p-2 rounded mb-3">
-                                Soit <strong>38 €</strong> après <a href="#" class="text-decoration-none text-primary">réduction fiscale</a>
-                                (dans la limite de 20 % du revenu imposable).
-                            </p>
-
-                            <!-- Bouton don -->
-                            <button class="btn btn-danger w-100 fw-bold py-2 rounded-pill">FAIRE UN DON</button>
-
-                            <!-- Crédit -->
-                            <p class="text-center text-muted small mt-3 mb-0">
-                                Powered by <strong>RGOODS</strong>
-                            </p>
+                        <!-- Grille de boutons -->
+                        <div class="amt-grid">
+                            <button type="button" class="amt-btn btn btn-outline-danger" data-amount="50">50 €</button>
+                            <button type="button" class="amt-btn btn btn-danger active" data-amount="150">150 €</button>
+                            <button type="button" class="amt-btn btn btn-outline-danger" data-amount="300">300 €</button>
                         </div>
+
+                        <!-- Input libre -->
+                        <div class="input-group mb-3">
+                            <input type="number" class="form-control amt-input" placeholder="Autre montant">
+                            <span class="input-group-text">€</span>
+                        </div>
+
+                        <!-- Affichage du calcul -->
+                        <div class="alert alert-secondary text-center">
+                            Coût réel après déduction : <strong class="deduction-val text-danger">37.50 €</strong>
+                        </div>
+
+                        <button class="btn btn-danger btn-lg w-100 rounded-pill fw-bold">VALIDER MON DON</button>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <?php include 'block/footer.php';?>
-
+        </div>
+    </section>
+</main>
+<?php include 'block/footer.php';?>
 </body>
 </html>
