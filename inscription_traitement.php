@@ -3,14 +3,11 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
-// 1. Charger les bases
-require_once 'User.php';
-require_once 'IUserRepository.php'; // Toujours charger l'interface avant le repository
-
-// 2. Charger les classes qui utilisent les bases
-require_once 'mySqlUserRepository.php';
-require_once 'bddConnect.php';
-require_once 'Authentification.php';
+require_once __DIR__ . '/classes/bddConnect.php';
+require_once __DIR__ . '/classes/IUserRepository.php';
+require_once __DIR__ . '/classes/User.php';
+require_once __DIR__ . '/classes/mySqlUserRepository.php';
+require_once __DIR__ . '/classes/Authentification.php';
 
 $bdd = new bddConnect();
 
