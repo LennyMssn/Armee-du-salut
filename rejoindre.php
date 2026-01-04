@@ -9,7 +9,6 @@
 <header><?php require_once 'block/nav.php'; ?></header>
 
 <main>
-    <!-- Section d'en-tête modernisée -->
     <section class="hero-banner">
         <div class="container">
             <h1 class="display-4 fw-bold">Rejoignez notre mission</h1>
@@ -21,8 +20,7 @@
     </section>
 
     <section class="container py-5">
-
-        <!-- 1. TRAVAILLER (Professionnels) -->
+        <!-- 1. TRAVAILLER -->
         <div class="row align-items-center mb-5 g-5">
             <div class="col-md-6">
                 <div class="overflow-hidden rounded-4 shadow-lg">
@@ -38,12 +36,12 @@
                     prêts à s'investir pour l'humain.
                 </p>
                 <a href="https://www.linkedin.com/company/fondation-armee-du-salut" target="_blank" class="btn btn-danger rounded-pill px-4 py-2 fw-bold shadow-sm">
-                    <i class="bi bi-linkedin me-2"></i>Consulter nos offres
+                    Consulter nos offres
                 </a>
             </div>
         </div>
 
-        <!-- 2. BÉNÉVOLAT (Alternance) -->
+        <!-- 2. BÉNÉVOLAT -->
         <div class="row align-items-center flex-md-row-reverse mb-5 g-5">
             <div class="col-md-6">
                 <div class="overflow-hidden rounded-4 shadow-lg">
@@ -75,15 +73,12 @@
                 <h2 class="fw-bold mb-3">S'engager en service civique</h2>
                 <p class="text-secondary mb-4">
                     Vous avez entre 16 et 25 ans ? Engagez-vous dans une mission d'intérêt général de 6 à 12 mois.
-                    Une expérience humaine forte au sein de nos foyers et établissements.
                 </p>
-                <a href="contact.php" class="btn btn-outline-danger rounded-pill px-4 py-2 fw-bold">
-                    En savoir plus
-                </a>
+                <a href="contact.php" class="btn btn-outline-danger rounded-pill px-4 py-2 fw-bold">En savoir plus</a>
             </div>
         </div>
 
-        <!-- 4. OFFICIER (Alternance) -->
+        <!-- 4. OFFICIER -->
         <div class="row align-items-center flex-md-row-reverse mb-5 g-5">
             <div class="col-md-6">
                 <div class="overflow-hidden rounded-4 shadow-lg">
@@ -93,4 +88,15 @@
             <div class="col-md-6">
                 <span class="badge bg-danger mb-2 px-3 py-2">Engagement Spirituel</span>
                 <h2 class="fw-bold mb-3">Devenir officier</h2>
-                <p
+                <p class="text-secondary mb-4">
+                    Les officiers sont les responsables spirituels et administratifs de l'Armée du Salut.
+                </p>
+                <a href="contact.php" class="btn btn-outline-danger rounded-pill px-4 py-2 fw-bold">Contacter un responsable</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer><?php require_once 'block/footer.php'; ?></footer>
+</body>
+</html>
