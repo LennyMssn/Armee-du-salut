@@ -38,11 +38,15 @@ $prenom = $_SESSION['user_prenom'] ?? '';
                             Bonjour, <?= $prenom ?>
                         </li>
                         <li><a class="dropdown-item" href="logout.php">Déconnexion</a></li>
-                        <li><a class="dropdown-item" href="gerer.php">Gérer mon compte</a></li>
+                        <?php if (!empty($_SESSION['is_admin'])): ?>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item fw-bold text-danger" href="admin_users.php">Admin Panel</a></li>
+                        <?php endif; ?>
 <?php else: ?>
                         <li><a class="dropdown-item" href="login.php">Connexion</a></li>
                         <li><a class="dropdown-item" href="inscription.php">Créer un compte</a></li>
 <?php endif; ?>    
+                    
                     </ul>
                 </li>
             </ul>

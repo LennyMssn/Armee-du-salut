@@ -38,6 +38,7 @@ class Authentification {
         $_SESSION['user_email'] = $user->getEmail();
         $_SESSION['user_prenom'] = $user->getPrenom();
         $_SESSION['user_nom'] = $user->getNom();
+        $_SESSION['is_admin'] = $user->isAdministrator();
 
         return true;
     }
