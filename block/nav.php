@@ -1,3 +1,8 @@
+<?php
+$isLoggedIn = isset($_SESSION['user_id']);
+$prenom = $_SESSION['user_prenom'] ?? '';
+?>
+
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top main-nav" id="mainNav" style="background: rgba(15, 23, 36, 0.9); backdrop-filter: blur(10px);">
     <div class="container">
         <a class="navbar-brand" href="index.php">
@@ -28,9 +33,16 @@
                         Compte
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="accountDropdown">
-                        <li><a class="dropdown-item" href="login.php">Connexion</a></li>
-                        <li><hr class="dropdown-divider"></li>
+<?php if ($isLoggedIn): ?>
+                        <li class="dropdown-item">
+                            Bonjour, <?= $prenom ?>
+                        </li>
+                        <li><a class="dropdown-item" href="logout.php">Déconnexion</a></li>
                         <li><a class="dropdown-item" href="gerer.php">Gérer mon compte</a></li>
+<?php else: ?>
+                        <li><a class="dropdown-item" href="login.php">Connexion</a></li>
+                        <li><a class="dropdown-item" href="inscription.php">Créer un compte</a></li>
+<?php endif; ?>    
                     </ul>
                 </li>
             </ul>

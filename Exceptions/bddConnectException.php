@@ -1,3 +1,4 @@
+<?php 
 class BddConnectException extends \Exception {
   protected string $type;
 
@@ -10,3 +11,4 @@ class BddConnectException extends \Exception {
     return $this->type;
   }
 }
+?>
