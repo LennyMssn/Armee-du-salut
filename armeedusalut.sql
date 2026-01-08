@@ -127,6 +127,15 @@ CREATE TABLE IF NOT EXISTS `presse` (
     PRIMARY KEY (`IdPresse`)
     ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+-- Table pour stocker le compteur de vues global
+CREATE TABLE IF NOT EXISTS site_stats (
+                                          id INT PRIMARY KEY,
+                                          vues_totales INT DEFAULT 0
+);
+
+-- On initialise la ligne (si elle n'existe pas).
+INSERT IGNORE INTO site_stats (id, vues_totales) VALUES (1, 0);
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
