@@ -69,6 +69,8 @@ CREATE TABLE IF NOT EXISTS `utilisateur` (
   PRIMARY KEY (`IdUtilisateur`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+
+
 --
 -- Déchargement des données de la table `utilisateur`
 --
@@ -86,6 +88,44 @@ INSERT INTO `utilisateur` (`IdUtilisateur`, `Email`, `MDP`, `EstAdmin`) VALUES
 ALTER TABLE `don`
   ADD CONSTRAINT `don_ibfk_1` FOREIGN KEY (`IdUtilisateur`) REFERENCES `utilisateur` (`IdUtilisateur`);
 COMMIT;
+
+-- 1. Mise à jour de la table 'don'
+-- On autorise IdUtilisateur à être NULL (pour les dons sans compte) et on ajoute Date et Type
+ALTER TABLE `don` MODIFY `IdUtilisateur` int NULL;
+ALTER TABLE `don` ADD `TypeDon` varchar(20) NOT NULL DEFAULT 'unique';
+ALTER TABLE `don` ADD `DateDon` datetime DEFAULT CURRENT_TIMESTAMP;
+
+-- 2. Mise à jour de la table 'message'
+ALTER TABLE `message` ADD `Objet` varchar(255) NOT NULL DEFAULT 'Demande de contact';
+ALTER TABLE `message` ADD `DateMessage` datetime DEFAULT CURRENT_TIMESTAMP;
+
+-- 3. Création de la table 'evenement'
+CREATE TABLE IF NOT EXISTS `evenement` (
+                                           `IdEvenement` int NOT NULL AUTO_INCREMENT,
+                                           `Titre` varchar(255) NOT NULL,
+    `Description` text,
+    `DateEvent` date NOT NULL,
+    `Lieu` varchar(255),
+    PRIMARY KEY (`IdEvenement`)
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- 4. Création de la table 'mission'
+CREATE TABLE IF NOT EXISTS `mission` (
+                                         `IdMission` int NOT NULL AUTO_INCREMENT,
+                                         `Titre` varchar(255) NOT NULL,
+    `Categorie` varchar(100),
+    `Statut` varchar(50) DEFAULT 'en_cours',
+    PRIMARY KEY (`IdMission`)
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- 5. Création de la table 'presse'
+CREATE TABLE IF NOT EXISTS `presse` (
+    `IdPresse` int NOT NULL AUTO_INCREMENT,
+    `Titre` varchar(255) NOT NULL,
+    `Lien` text,
+    `DatePresse` date,
+    PRIMARY KEY (`IdPresse`)
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

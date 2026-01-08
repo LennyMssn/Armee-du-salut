@@ -46,3 +46,35 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const filterBtns = document.querySelectorAll(".filtre-btn");
+    const articles = document.querySelectorAll(".article-item");
+
+    if (filterBtns.length > 0) {
+        filterBtns.forEach(btn => {
+            btn.addEventListener("click", () => {
+                // 1. Gérer l'apparence des boutons
+                filterBtns.forEach(b => {
+                    b.classList.remove("active", "btn-danger");
+                    b.classList.add("btn-outline-danger");
+                });
+                btn.classList.add("active", "btn-danger");
+                btn.classList.remove("btn-outline-danger");
+
+                // 2. Logique de filtrage
+                const filterValue = btn.getAttribute("data-filtre");
+
+                articles.forEach(item => {
+                    const itemTag = item.getAttribute("data-tag");
+
+                    if (filterValue === "all" || itemTag === filterValue) {
+                        item.style.display = ""; // Affiche (reset vers display par défaut de la grille)
+                    } else {
+                        item.style.display = "none"; // Cache
+                    }
+                });
+            });
+        });
+    }
+});
